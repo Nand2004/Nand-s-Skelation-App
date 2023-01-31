@@ -15,7 +15,7 @@ export default function Navbar() {
   useEffect(() => {
   setUser(getUserInfo())
   }, [])
-  
+
   // if (!user) return null   - for now, let's show the bar even not logged in.
   // we have an issue with getUserInfo() returning null after a few minutes
   // it seems.
@@ -25,6 +25,7 @@ export default function Navbar() {
       <Nav className="me-auto">
         <Nav.Link href="/">Start</Nav.Link>
         <Nav.Link href="/home">Home</Nav.Link>
+        <Nav.Link href="/mbtaAlerts">MBTA Alerts</Nav.Link>
         <Nav.Link href="/privateUserProfile">Profile</Nav.Link>
       </Nav>
     </Container>
