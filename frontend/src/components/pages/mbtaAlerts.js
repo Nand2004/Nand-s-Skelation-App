@@ -6,7 +6,6 @@ import axios from 'axios';
 function Alerts() {
   const [alerts, setAlerts] = useState([]);
 
-
   useEffect(() => {
     async function fetchData() {
       const result = await axios(
@@ -16,8 +15,6 @@ function Alerts() {
     }
     fetchData();
   }, []);
-
-
   return (
     <div>
       {alerts.map(alert => (
